@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link
+      rel="stylesheet"
+      href="/node_modules/bootstrap/dist/css/bootstrapMint.min.css"
+    />
+    <script
+      defer
+      src="./node_modules/bootstrap/dist/js/bootstrap.min.js"
+    ></script>
+
+    <link rel="stylesheet" href="/css/filter.min.css" />
+
+    <link rel="stylesheet" href="/css/cards.min.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"
+            ><img src="/assets/logo.png" width="100px"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarColor01"
+            aria-controls="navbarColor01"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarColor01">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="./index.html">Home </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./catalogue.html">Catalogue</a>
+                <span class="visually-hidden">(current)</span>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input
+                class="form-control me-sm-2"
+                type="search"
+                placeholder="Search"
+              />
+              <button class="btn btn-dark my-2 my-sm-0" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="background">
+        <img class="background-image" src="/assets/car2.jpg" />
+      </div>
+
+      <div class="container">
+        <div class="filter-container">
+          <form class="filter-form">
+            <div class="filter-items">
+              <div class="car-select">
+                <label for="make-select" class="form-label mt-4">Make</label>
+                <select class="form-select" id="make-select">
+                  <option>Kia</option>
+                  <option>Hyundai</option>
+                </select>
+
+                <label for="model-select" class="form-label mt-4">Model</label>
+                <select class="form-select" id="model-select">
+                  <option>Sorento</option>
+                  <option>Rio</option>
+                </select>
+
+                <label for="year-select" class="form-label mt-4">Year</label>
+                <select class="form-select" id="year-select">
+                  <option>2020</option>
+                  <option>2021</option>
+                  <option>2022</option>
+                  <option>2023</option>
+                </select>
+              </div>
+
+              <div class="price-select">
+                <label for="min-price-select" class="form-label mt-4"
+                  >Min price</label
+                >
+                <select class="form-select" id="min-price-select">
+                  <option>$0</option>
+                  <option>&1000</option>
+                  <option>$5000</option>
+                  <option>$10000</option>
+                </select>
+
+                <label for="max-price-select" class="form-label mt-4"
+                  >Max-price</label
+                >
+                <select class="form-select" id="max-price-select">
+                  <option>$0</option>
+                  <option>&1000</option>
+                  <option>$5000</option>
+                  <option>$10000</option>
+                </select>
+              </div>
+
+              <div class="search-button">
+                <button type="button" class="btn btn-primary">Search</button>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <div class="card-section">
+          <h1 class="title">Catalogue</h1>
+          <ul class="cads-list">
+            <li class="card-item">
+              <div class="card mb-3">
+                <h3 class="card-header">Kia Sorento</h3>
+                <div class="card-body">
+                  <h5 class="card-title">$28 000</h5>
+                  <h6 class="card-subtitle text-muted">2.0 L/184 a.g./Dizel</h6>
+                </div>
+                <img src="/assets/sorento.jpg" alt="" />
+                <div class="card-body">
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Cras justo odio</li>
+                  <li class="list-group-item">Dapibus ac facilisis in</li>
+                  <li class="list-group-item">Vestibulum at eros</li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="card-item">
+              <div class="card mb-3">
+                <h3 class="card-header">Kia Sorento</h3>
+                <div class="card-body">
+                  <h5 class="card-title">$28 000</h5>
+                  <h6 class="card-subtitle text-muted">2.0 L/184 a.g./Dizel</h6>
+                </div>
+                <img src="/assets/sorento.jpg" alt="" />
+                <div class="card-body">
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">2.0 L/184 a.g./Dizel</li>
+                  <li class="list-group-item">Dapibus ac facilisis in</li>
+                  <li class="list-group-item">Vestibulum at eros</li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
